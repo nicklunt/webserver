@@ -1,0 +1,26 @@
+# Compiled files
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+.terraformrc
+terraform.rc
+.terraform/
+.terraform.lock.hcl
+.DS_Store
+*.tfstate
+*.tfstate.backup
+
+# Visual Studio 2015 cache/options directory
+.vs/
+*/bin
+
+# Module directory
+**/.terraform.lock.hcl
+**/.terraform.tfstate.lock.info
+
+# Keys
+*.pem
+**/*.pem
+*.pub
+**/*.pub
+

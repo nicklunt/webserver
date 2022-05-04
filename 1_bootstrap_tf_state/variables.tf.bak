@@ -1,0 +1,32 @@
+# variable "environment" {
+#   description = "Environment name to bootstrap (dev/qa/uat/prd)"
+#   type        = string
+#   validation {
+#     condition     = var.environment == "dev" || var.environment == "qa" || var.environment == "uat" || var.environment == "prd"
+#     error_message = "The environment value must be one of dev, qa, uat, prd."
+#   }
+# }
+
+# variable "env_vars" {
+#   description = "Variables for each environment"
+
+#   type = map(any)
+
+#   default = {
+#     "dev" = {
+#       account_id    = "721826909603"
+#       product_name  = "templateproduct"
+#       product_owner = "dvagner"
+#       region        = "us-east-1"
+#       region_short  = "use1"
+#     }
+#     "qa" = {
+#       account_id    = "721826909603"
+#       product_name  = "templateproduct"
+#       product_owner = "dvagner"
+#       region        = "us-east-1"
+#       region_short  = "use1"
+#     }
+#   }
+# }
+
