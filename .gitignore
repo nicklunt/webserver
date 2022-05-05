@@ -24,3 +24,4 @@ terraform.rc
 *.pub
 **/*.pub
 
+4_webserver/global_vars.tf

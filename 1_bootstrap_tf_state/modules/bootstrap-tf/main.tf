@@ -33,10 +33,10 @@ resource "aws_s3_bucket" "terraform_state_bucket" {
   }
 
   tags = {
-    Name        = "aws-${local.environment}-${local.region_short}-z-z-s3-${local.product_name}-terraformstate-z"
-    Product     = "${local.product_name}"
-    Environment = "${local.environment}"
-    Owner       = "${local.product_owner}"
+    Name = "aws-${local.environment}-${local.region_short}-z-z-s3-${local.product_name}-terraformstate-z"
+    # Product     = "${local.product_name}"
+    # Environment = "${local.environment}"
+    # Owner       = "${local.product_owner}"
   }
 }
 
@@ -62,10 +62,10 @@ resource "aws_dynamodb_table" "terraform_state_table" {
   }
 
   tags = {
-    Name        = "aws-${local.environment}-${local.region_short}-z-z-dynamodb-${local.product_name}-terraformstate-z"
-    Product     = "${local.product_name}"
-    Environment = "${local.environment}"
-    Owner       = "${local.product_owner}"
+    Name = "aws-${local.environment}-${local.region_short}-z-z-dynamodb-${local.product_name}-terraformstate-z"
+    # Product     = "${local.product_name}"
+    # Environment = "${local.environment}"
+    # Owner       = "${local.product_owner}"
   }
 }
 
@@ -80,10 +80,10 @@ resource "aws_iam_role" "services_jenkins_infra_deployment_role" {
   assume_role_policy = data.aws_iam_policy_document.services_jenkins_infra_deployment_assume_role_policy.json
 
   tags = {
-    Name        = "aws-${local.environment}-z-z-z-role-${local.product_name}-jenkinsinfradeployment-z"
-    Product     = "${local.product_name}"
-    Environment = "${local.environment}"
-    Owner       = "${local.product_owner}"
+    Name = "aws-${local.environment}-z-z-z-role-${local.product_name}-jenkinsinfradeployment-z"
+    # Product     = "${local.product_name}"
+    # Environment = "${local.environment}"
+    # Owner       = "${local.product_owner}"
   }
 }
 

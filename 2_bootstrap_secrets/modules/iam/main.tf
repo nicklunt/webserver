@@ -13,10 +13,10 @@ resource "aws_iam_user" "services_jenkins_controller_user" {
   name = "aws-${local.environment}-z-z-z-user-${local.product_name}-jenkinscontroller-z"
 
   tags = {
-    Name        = "aws-${local.environment}-z-z-z-user-${local.product_name}-jenkinscontroller-z"
-    Owner       = local.product_owner
-    Environment = local.environment
-    Product     = local.product_name
+    Name = "aws-${local.environment}-z-z-z-user-${local.product_name}-jenkinscontroller-z"
+    # Owner       = local.product_owner
+    # Environment = local.environment
+    # Product     = local.product_name
   }
 }
 
@@ -178,10 +178,10 @@ resource "aws_iam_policy" "services_jenkins_controller_policy" {
   policy = data.aws_iam_policy_document.services_jenkins_controller_policy.json
 
   tags = {
-    Name        = "aws-${local.environment}-z-z-z-policy-${local.product_name}-jenkinscontroller-z"
-    Owner       = local.product_owner
-    Environment = local.environment
-    Product     = local.product_name
+    Name = "aws-${local.environment}-z-z-z-policy-${local.product_name}-jenkinscontroller-z"
+    # Owner       = local.product_owner
+    # Environment = local.environment
+    # Product     = local.product_name
   }
 }
 

@@ -11,7 +11,7 @@ locals {
   #
   # module specific variables
   #
-  vpc_cidr = lower(var.vpc_cidr)
+  vpc_cidr     = lower(var.vpc_cidr)
   vpc_function = lower(var.vpc_function)
 
 }
@@ -22,10 +22,10 @@ resource "aws_vpc" "this" {
   enable_dns_hostnames = true
 
   tags = {
-    Name        = "aws-${local.environment}-${local.region_short}-z-z-vpc-${local.product_name}-${local.vpc_function}-z"
-    Owner       = local.product_owner
-    Environment = local.environment
-    Product     = local.product_name
+    Name = "aws-${local.environment}-${local.region_short}-z-z-vpc-${local.product_name}-${local.vpc_function}-z"
+    # Owner       = local.product_owner
+    # Environment = local.environment
+    # Product     = local.product_name
   }
 }
 

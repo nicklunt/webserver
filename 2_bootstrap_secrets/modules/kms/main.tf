@@ -25,11 +25,11 @@ resource "aws_kms_key" "secretsmanager_kms_key" {
       }
   ] })
 
-  tags = {
-    Product     = "${local.product_name}"
-    Environment = "${local.environment}"
-    Owner       = "${local.product_owner}"
-  }
+  # tags = {
+  #   Product     = "${local.product_name}"
+  #   Environment = "${local.environment}"
+  #   Owner       = "${local.product_owner}"
+  # }
 
 }
 
