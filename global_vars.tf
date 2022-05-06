@@ -24,7 +24,7 @@ variable "env_vars" {
   default = {
     "dev" = {
       account_id                         = "329035065473"
-      product_name                       = "nlwebserver"
+      product_name                       = "nlwebserver" # matches 4_product, eg 4_smonik
       product_owner                      = "nlunt"
       region                             = "eu-west-2"
       region_short                       = "use1"
@@ -34,7 +34,7 @@ variable "env_vars" {
     }
     "qa" = {
       account_id                         = "329035065473"
-      product_name                       = "nlwebserver"
+      product_name                       = "nlwebserver" # matches 4_product, eg 4_smonik
       product_owner                      = "nlunt"
       region                             = "eu-west-2"
       region_short                       = "use1"
@@ -44,7 +44,7 @@ variable "env_vars" {
     }
     "uat" = {
       account_id                         = "329035065473"
-      product_name                       = "nlwebserver"
+      product_name                       = "nlwebserver" # matches 4_product, eg 4_smonik
       product_owner                      = "nlunt"
       region                             = "eu-west-2"
       region_short                       = "use1"
@@ -54,7 +54,7 @@ variable "env_vars" {
     }
     "prd" = {
       account_id                         = "329035065473"
-      product_name                       = "nlwebserver"
+      product_name                       = "nlwebserver" # matches 4_product, eg 4_smonik
       product_owner                      = "nlunt"
       region                             = "eu-west-2"
       region_short                       = "use1"
