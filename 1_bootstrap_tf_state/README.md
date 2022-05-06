@@ -29,8 +29,8 @@ This project should be executed **ONCE per environment** (dev/qa/uat/prd).
 
 >   terraform init
 >   terraform validate
->   terraform plan
->   terraform apply
+>   terraform plan -var environment=dev
+>   terraform apply -var environment=dev
 
 <br>
 

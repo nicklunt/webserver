@@ -1,5 +1,9 @@
 # Introduction 
-This is **TEMPLATE** project so **review/modify all values in all variables.tf files** before executing.
+This is **TEMPLATE** project so **review/modify all values in all globa_vars.tf files** before executing.
+
+The root level global_vars.tf is symlinked to the 4 projects global_vars.tf. 
+This is because all global vars are the same for each project. 
+Updating the root level global_vars.tf will therefore update global_vars.tf for all projects.
 
 <br>
 
@@ -38,7 +42,7 @@ Allowed \<env\> **must** be one of the below
 
 ## Step 4 - Build product application
 
->   cd ../4_testproduct<br> # rename '4_testproduct' to '4_product_name' as defined in variables.tf
+>   cd ../4_testproduct<br> # rename '4_testproduct' to '4_product_name' where product_name is defined in global_vars.tf
 >   terraform init -backend-config=./env_vars/dev.backend.tfbackend<br>
 >   terraform validate<br>
 >   terraform plan -var environment="dev"<br>

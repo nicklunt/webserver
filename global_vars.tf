@@ -10,7 +10,6 @@
 variable "environment" {
   description = "Environment name to bootstrap (dev/qa/uat/prd)"
   type        = string
-  # default     = "dev"
   validation {
     condition     = var.environment == "dev" || var.environment == "qa" || var.environment == "uat" || var.environment == "prd"
     error_message = "The environment value must be one of dev, qa, uat, prd."
@@ -31,7 +30,7 @@ variable "env_vars" {
       region_short                       = "use1"
       jenkins_access                     = false # Not currently deployed from jenkins
       jenkins_controller_pub_cidr_blocks = ["69.176.99.242/32", "100.37.24.191"]
-      breakglass_ssh_key_path            = "./aws-dev-testproduct-keyPair.pub"
+      breakglass_ssh_key_path            = "./aws-dev-testproduct-keyPair.pub" # in 2_bootstrap_secrets/
     }
     "qa" = {
       account_id                         = "329035065473"
@@ -41,7 +40,7 @@ variable "env_vars" {
       region_short                       = "use1"
       jenkins_access                     = false # Not currently deployed from jenkins
       jenkins_controller_pub_cidr_blocks = ["69.176.99.242/32", "100.37.24.191"]
-      breakglass_ssh_key_path            = "./aws-qa-templateproduct-keyPair.pub"
+      breakglass_ssh_key_path            = "./aws-qa-templateproduct-keyPair.pub" # in 2_bootstrap_secrets/
     }
     "uat" = {
       account_id                         = "329035065473"
@@ -51,7 +50,7 @@ variable "env_vars" {
       region_short                       = "use1"
       jenkins_access                     = false # Not currently deployed from jenkins
       jenkins_controller_pub_cidr_blocks = ["69.176.99.242/32", "100.37.24.191"]
-      breakglass_ssh_key_path            = "./aws-uat-templateproduct-keyPair.pub"
+      breakglass_ssh_key_path            = "./aws-uat-templateproduct-keyPair.pub" # in 2_bootstrap_secrets/
     }
     "prd" = {
       account_id                         = "329035065473"
@@ -61,7 +60,7 @@ variable "env_vars" {
       region_short                       = "use1"
       jenkins_access                     = false # Not currently deployed from jenkins
       jenkins_controller_pub_cidr_blocks = ["69.176.99.242/32", "100.37.24.191"]
-      breakglass_ssh_key_path            = "./aws-prd-templateproduct-keyPair.pub"
+      breakglass_ssh_key_path            = "./aws-prd-templateproduct-keyPair.pub" # in 2_bootstrap_secrets/
     }
     # "vpc_1" = {
     #   vpc_function     = "test" # one word describing what this vpc is for

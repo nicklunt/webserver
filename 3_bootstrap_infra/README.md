@@ -22,5 +22,5 @@ Allowed \<env\> **must** be one of the below
 
 >   terraform init -backend-config=./env_vars/dev.backend.tfbackend
 >   terraform validate
->   terraform plan
->   terraform apply
+>   terraform plan -var environment=dev
+>   terraform apply -var environment=dev

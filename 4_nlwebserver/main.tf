@@ -5,7 +5,7 @@ locals {
   region        = lower(var.env_vars[var.environment].region)
   region_short  = lower(var.env_vars[var.environment].region_short)
 
-  data_subnet_id = data.terraform_remote_state.infra_state.outputs.data_subnet_id
+  data_subnet_id    = data.terraform_remote_state.infra_state.outputs.data_subnet_id
   ssh_key_pair_name = data.terraform_remote_state.secrets_state.outputs.ssh_key_pair_name
 }
 
@@ -39,5 +39,5 @@ module "test_linux_instance" {
   source    = "./modules/ec2"
   ami       = "ami-0a1a5eea3d0f8c19e"
   subnet_id = local.data_subnet_id
-  key_name = local.ssh_key_pair_name
+  key_name  = local.ssh_key_pair_name
 }
