@@ -13,3 +13,7 @@ output "web_subnet_id" {
 output "infra_subnet_id" {
   value = module.subnets_vpc_1.infra_subnet_id
 }
+
+output "vpc_id" {
+  value = module.vpc_1.vpc_id
+}

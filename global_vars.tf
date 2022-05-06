@@ -62,11 +62,6 @@ variable "env_vars" {
       jenkins_controller_pub_cidr_blocks = ["69.176.99.242/32", "100.37.24.191"]
       breakglass_ssh_key_path            = "./aws-prd-templateproduct-keyPair.pub" # in 2_bootstrap_secrets/
     }
-    # "vpc_1" = {
-    #   vpc_function     = "test" # one word describing what this vpc is for
-    #   vpc_cidr         = "10.140.16.0/20"
-    #   data_subnet_cidr = ["10.140.20.0/23", "10.140.22.0/23"]
-    # }
   }
 }
 

@@ -29,7 +29,7 @@ data "terraform_remote_state" "secrets_state" {
   }
 }
 
-module "test_linux_instance" {
+module "test_instance" {
   product_name  = lower(var.env_vars[var.environment].product_name)
   product_owner = lower(var.env_vars[var.environment].product_owner)
   environment   = lower(var.environment)
