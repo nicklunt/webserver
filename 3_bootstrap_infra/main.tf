@@ -40,6 +40,19 @@ module "subnets_vpc_1" {
   infra_subnet_cidrs = var.infra_vars[var.environment].vpc_1.infra_subnet_cidr
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 # module "security_groups" {
 #   source = "./modules/security_groups"
 #   #
